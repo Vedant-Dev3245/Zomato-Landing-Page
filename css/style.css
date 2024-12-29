@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 34px;
+}
+
+#header-image {
+    width: 100%;
+    position: absolute;
+    top: -150px;
+    z-index: -1;
+}
+
+#header-image img {
+    width: 100%;
+    top: -150px;
+    z-index: -1;
+
+}
+
+#nav {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 220px;
+    justify-content: space-between;
+    color: white;
+    padding-top: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#one {
+    font-size: smaller;
+}
+
+#one a {
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#bar {
+    display: flex;
+}
+
+#bar li {
+    list-style: none;
+}
+
+#bar li a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    padding-left: 30px;
+    color: white;
+}
+
+#head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+#logo {
+    width: 300px;
+    height: 60px;
+}
+
+#tag {
+    color: white;
+    margin-top: 38px;
+    margin-bottom: 0;
+    width: 700px;
+    height: 48px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Okra, Helvetica, sans-serif;
+}
+
+#search {
+    display: flex;
+    width: 776px;
+    height: 54px;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+#search input {
+    outline: none;
+    border: none;
+    width: 50%;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#search p {
+    color: gray;
+    border-right: 1px solid gray;
+    width: 243px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+#marker {
+    margin-left: 8px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+#link {
+    width: 353px;
+    height: 240px;
+}
+
+#box {
+    position: relative;
+    width: 343px;
+    height: 240px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px gray;
+    background-color: rbg(243, 240, 240);
+}
+
+#box img {
+    width: 100%;
+    height: 192px;
+    ;
+    border-radius: 15px;
+    border: 1px solid rgb(225, 219, 219);
+    z-index: -1;
+}
+
+#content {
+    position: absolute;
+    bottom: 3px;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    background-color: white;
+    width: 343px;
+    height: 70px;
+    z-index: 2;
+}
+
+#p1 {
+    padding-top: 10px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin: 0px;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#p2 {
+    margin-top: 0px;
+    font-weight: 400;
+    color: rgb(79, 79, 79);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icon {
+    display: none;
+    color: white;
+    margin: 10px;
+
+}
+
+.icon a {
+    color: white;
+}
+
+#menu {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .icon {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #header-image img {
+        height: 440px;
+        width: 100%;
+    }
+
+
+    #head {
+        margin-top: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    #logo {
+        align-self: center;
+    }
+
+    #tag {
+        text-align: center;
+        font-size: 28px;
+        width: 90%;
+    }
+
+    #search {
+        width: 90%;
+    }
+
+    section {
+        flex-wrap: wrap;
+    }
+
+}
